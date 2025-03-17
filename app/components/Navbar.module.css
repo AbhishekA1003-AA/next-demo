@@ -1,0 +1,122 @@
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.logo:hover {
+    color: #f0a500;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navLink:hover {
+    background: #555;
+}
+
+.active {
+    background: #f0a500;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.dropdownContent {
+    display: none;
+    position: fixed;
+    background: #444;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    right: 32px;
+    top: 45px;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdownContent a:hover {
+    background: #666;
+}
+
+.menuButton {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.mobileMenu {
+    display: none;
+    background: #222;
+    padding: 15px;
+}
+
+.mobileMenu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.mobileMenu a:hover {
+    background: #444;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+}
